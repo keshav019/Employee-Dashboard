@@ -26,7 +26,8 @@ const DashBoard = () => {
     };
 
     const deleteEmployee = (id) => {
-        setEmployeeData((prevData) => prevData.filter((employee) => employee.id !== id));
+        setFilterData((prevData) => prevData.filter((employee) => employee.id !== id));
+
     };
     const filterResult = (id) => {
         if (id == '') {
